@@ -15,9 +15,7 @@ class ContactForm extends Component {
     }
 
     handleSubmit = (e) => {
-        e.preventDefault();
-        console.log(this.props);
-        
+        e.preventDefault();        
 
         this.props.onSubmit({id: nanoid(), name: this.state.name, number: this.state.number
         })
